@@ -18,3 +18,11 @@ Render HTML into the DOM
 <p>Country Name : {{country.name}}</p>
 <p>Country Capital : {{country.capital}}</p>
 </div>
+
+{{!-- comment --}}
+
+{{#each countries}}
+    {{#if this.western}}
+    <li>{{this.name}} --- {{this.capital}}</li>
+    {{/if}}
+{{/each}}

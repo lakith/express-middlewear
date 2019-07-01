@@ -26,6 +26,17 @@ app.use(validateUser)
 
 app.get("/",(req,res,next) => {
     res.render("index",{
+        countries:[
+        {
+            name:"Sri lanka",
+            capital:"Colombo",
+            western:false
+        },
+        {
+            name:"India",
+            capital:"Delhi",
+            western:true
+        }],
         country:{
             name:"Sri lanka",
             capital:"Colombo"
